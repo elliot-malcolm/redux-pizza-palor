@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Menu from '../Menu/Menu';
 import MenuItem from '../MenuItem/MenuItem';
+import '../MenuItem/MenuItem.css';
 import CustomerInformation from '../CustomerInformation/CustomerInformation';
 import Checkout from '../Checkout/Checkout';
 import { connect } from 'react-redux';
@@ -41,11 +42,11 @@ class App extends Component {
         <br/>
         <img alt='delish' src="images/pizza_photo.png"/>
         <p>Pizza is great.</p>
-        <>
-        <Menu />
-        <CustomerInformation />
-        <Checkout />
-        </>
+        <ul>
+          <Menu />
+          <CustomerInformation />
+          <Checkout />
+        </ul>
       </div>
     );
   }
